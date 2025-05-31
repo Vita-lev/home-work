@@ -1,0 +1,170 @@
+.dark {
+    --color-bg: black;
+    --color-text: white;
+    --button-icon: "☀️";
+    --foto: url(../picture/foto-vita_levon.jpg);
+    --color-bg-header: rgb(38, 38, 38);
+    --color-bg-wrapper: rgb(17, 17, 17);
+    --color-body: radial-gradient(circle, rgba(61, 74, 161, 1) 0%, rgba(27, 57, 71, 1) 37%, rgba(0, 0, 0, 1) 100%);
+
+    --button-bg: #4F2DD0;
+    --button-text: #FFFFFF;
+    --button-border: none;
+    --button-hover: #351d8b;
+}
+
+
+.light {
+    --color-bg: white;
+    --color-text: black;
+    --button-icon: "🌔";
+    --foto: url(../picture/photo_light.jpg);
+    --color-bg-header: rgb(240, 238, 238);
+    --color-bg-wrapper: #f6f6f6;
+    --color-body: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
+    --button-bg: #E5EAF1;
+    --button-text: black;
+    --button-border: 1px solid #4F2DD1;
+    --button-hover: #c5d1e3;
+}
+
+body {
+    background-color: var(--color-bg);
+    background-image: var(--color-body);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100%;
+    color: var(--color-text);
+    font-family: sans-serif;
+    transition: background-size 5s;
+
+}
+
+body:hover {
+    background-size: 120%;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--color-bg-wrapper);
+    border-radius: 10px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+
+
+.link {
+    width: 30px;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.link {
+    opacity: 0.3;
+}
+
+.link:hover {
+    opacity: 1;
+}
+
+.activ {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.contact {
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-bg-header);
+    padding: 3px 16px;
+    margin-bottom: 16px;
+}
+
+.header__title {
+    display: flex;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 3px 16px;
+}
+
+
+
+.btn {
+    background-color: transparent;
+    font-size: 30px;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn::before {
+    content: var(--button-icon);
+}
+
+.img {
+    width: 353px;
+    height: 459px;
+    background-image: var(--foto);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 8px;
+}
+
+
+
+.conteiner {
+    padding: 3px 16px;
+}
+
+.button-dounload {
+    display: flex;
+    max-width: 230px;
+    height: 50px;
+    border-radius: 12px;
+    padding: 0 40px;
+    gap: 10px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: var(--button-border);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.button-dounload:hover {
+    background-color: var(--button-hover);
+}
+
+
+@media (max-width:767px) {
+    .hero {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .img {
+        width: 100%;
+        height: 260px;
+    }
+}
