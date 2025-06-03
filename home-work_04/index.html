@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_06.form</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+
+        }
+
+        .wrapper {
+            margin: 20px auto;
+            align-items: center;
+            background-color: beige;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 13px 16px 59px -12px rgba(5, 11, 63, 0.71);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgb(5, 0, 54);
+
+        }
+
+        .container {
+            background-color: rgb(169, 193, 233);
+        }
+
+        .form {
+            padding: 20px;
+
+        }
+
+        .h1__title {
+            color: rgba(5, 54, 153, 1);
+            padding: 20px;
+        }
+
+        .form__input {
+            margin-bottom: 10px;
+            display: flex;
+
+        }
+
+        .form__input label {
+            width: 50%;
+        }
+
+        .form__input input {
+            width: 50%;
+            border-radius: 8px;
+            padding: 3px 6px;
+        }
+
+        .item {
+            border-radius: 8px;
+            padding: 3px 6px;
+        }
+
+        .form__input-text {
+            border-radius: 8px;
+            padding: 3px 6px;
+        }
+
+        .form__checkboxs {
+            display: flex;
+            width: 50%;
+
+        }
+
+        .form__checkbox {
+            display: flex;
+            gap: 6px;
+
+        }
+
+        .form__input {
+
+            gap: 10px;
+        }
+
+        .form__buttons {
+            display: flex;
+            padding-top: 20px;
+            gap: 10px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            padding: 8px 10px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            background: linear-gradient(0deg, rgba(30, 220, 227, 1) 0%, rgba(5, 54, 153, 1) 100%);
+            color: #ffffff;
+        }
+
+        .btn:hover {
+            background: linear-gradient(0deg, rgba(5, 54, 153, 1) 0%, rgba(30, 220, 227, 1) 100%);
+        }
+
+        .btn:active {
+            background: linear-gradient(0deg, rgba(30, 220, 227, 1) 0%, rgba(5, 54, 153, 1) 100%);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1 class="h1__title"> My form registration</h1>
+        <fieldset class="container">
+
+            <form class="form" method="post" name="" target="_blank">
+
+                <div class="form__input">
+                    <label for="inp1">
+                        Повне i'мя
+                    </label>
+                    <input id="inp1" type="text" required placeholder="vita">
+                </div>
+
+                <div class="form__input">
+                    <label for="inp2">
+                        E-Mail
+                    </label>
+                    <input id="inp2" type="email" required placeholder="vita@gmail.com">
+                </div>
+
+                <div class="form__input">
+                    <label for="inp3">
+                        Пароль
+                    </label>
+                    <input id="inp3" type="password" name="pass" required>
+                </div>
+
+                <div class="form__input">
+                    <label for="inp4">
+                        Пароль ще раз
+                    </label>
+                    <input id="inp4" type="password" name="repass" required>
+                </div>
+
+                <div class="form__input">
+                    <label for="">Стать</label>
+                    <span class="form__checkboxs">
+                        <label class="form__checkbox" for="inp5">
+                            <input id="inp5" type="radio" name="sex" value="man">
+                            Чоловіча
+                        </label>
+
+                        <label class="form__checkbox" for="inp6">
+                            <input id="inp6" type="radio" name="sex" value="woman">
+                            Жіноча
+                        </label>
+                    </span>
+
+
+                </div>
+
+                <div class="form__input">
+                    <label for="inp7">
+                        Вік
+                    </label>
+                    <input id="inp7" type="number" required>
+                </div>
+
+                <div class="form__input">
+                    <label for="inp8">
+                        Курс
+                    </label>
+                    <select class="item" id="inp8" required>
+                        <option value="">Front-ent</option>
+                        <option value="">QI</option>
+                        <option value="">Manager</option>
+                        <option value="">Designer</option>
+                        <option value="">Back-end</option>
+                    </select>
+                </div>
+
+                <div class="form__input">
+                    <label for="inp9">
+                        Повнa адреса
+                    </label>
+                    <textarea class="form__input-text" id="inp9" rows="4" required
+                        placeholder="Країна, регіон, місто/ селище, вулиця"></textarea>
+                </div>
+
+                <div class="form__checkbox">
+                    <input id="inp10" type="checkbox" required>Я погоджуюсь з обробкою персональних данних
+                    <label for="inp10">
+                    </label>
+                </div>
+
+                <div class="form__buttons">
+                    <button type="reset" class="btn">Очистити форму</button>
+                    <button type="submit" class="btn">Зареєструватися</button>
+                </div>
+
+
+            </form>
+        </fieldset>
+    </div>
+
+
+</body>
+
+</html>
