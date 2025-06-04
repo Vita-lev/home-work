@@ -124,47 +124,47 @@
         <h1 class="h1__title"> My form registration</h1>
         <fieldset class="container">
 
-            <form class="form" method="post" name="" target="_blank">
+            <form class="form" action="" method="post" target="_blank">
 
                 <div class="form__input">
-                    <label for="inp1">
+                    <label for="name">
                         Повне i'мя
                     </label>
-                    <input id="inp1" type="text" required placeholder="vita">
+                    <input id="name" type="text" name="name" required placeholder="vita" minlength="2">
                 </div>
 
                 <div class="form__input">
-                    <label for="inp2">
+                    <label for="email">
                         E-Mail
                     </label>
-                    <input id="inp2" type="email" required placeholder="vita@gmail.com">
+                    <input id="email" type="email" name="email" required placeholder="vita@gmail.com">
                 </div>
 
                 <div class="form__input">
-                    <label for="inp3">
+                    <label for="pass">
                         Пароль
                     </label>
-                    <input id="inp3" type="password" name="pass" required>
+                    <input id="pass" type="password" name="pass" required maxlength="8">
                 </div>
 
                 <div class="form__input">
-                    <label for="inp4">
+                    <label for="repass">
                         Пароль ще раз
                     </label>
-                    <input id="inp4" type="password" name="repass" required>
+                    <input id="repass" type="password" name="repass" required maxlength="8">
                 </div>
 
                 <div class="form__input">
-                    <label for="">Стать</label>
+                    <label for="sex">Стать</label>
                     <span class="form__checkboxs">
                         <label class="form__checkbox" for="inp5">
                             <input id="inp5" type="radio" name="sex" value="man">
-                            Чоловіча
+                            Чоловік
                         </label>
 
                         <label class="form__checkbox" for="inp6">
                             <input id="inp6" type="radio" name="sex" value="woman">
-                            Жіноча
+                            Жінка
                         </label>
                     </span>
 
@@ -172,17 +172,17 @@
                 </div>
 
                 <div class="form__input">
-                    <label for="inp7">
+                    <label for="yers">
                         Вік
                     </label>
-                    <input id="inp7" type="number" required>
+                    <input id="yers" type="number" name="yers" required>
                 </div>
 
                 <div class="form__input">
-                    <label for="inp8">
+                    <label for="course">
                         Курс
                     </label>
-                    <select class="item" id="inp8" required>
+                    <select class="item" id="course" name="course" required>
                         <option value="">-=Вибери курс=-</option>
                         <option value="">Front-ent</option>
                         <option value="">QI</option>
@@ -193,16 +193,17 @@
                 </div>
 
                 <div class="form__input">
-                    <label for="inp9">
+                    <label for="address">
                         Повнa адреса
                     </label>
-                    <textarea class="form__input-text" id="inp9" rows="4" required
+                    <textarea class="form__input-text" id="address" name="address" rows="4" required
                         placeholder="Країна, регіон, місто/ селище, вулиця"></textarea>
                 </div>
 
                 <div class="form__checkbox">
-                    <input id="inp10" type="checkbox" required>Я погоджуюсь з обробкою персональних данних
-                    <label for="inp10">
+                    <label for="agree">
+                        <input id="agree" type="checkbox" name="agree" required>Я погоджуюсь з обробкою персональних
+                        данних
                     </label>
                 </div>
 
