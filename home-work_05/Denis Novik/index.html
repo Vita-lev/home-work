@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4. Figma - Denis Novik</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --font-size: 400 18px/18px 'Open Sans', sans-serif;
+            --font-size-subject: 700 34px/34px 'Open Sans', sans-serif;
+        }
+
+        body {
+            font: var(--font-size);
+        }
+
+        .container {
+            /* width: 90px; */
+            /* width: calc(100% - 30px);*/
+            max-width: 970px;
+            margin: 0 auto;
+            width: min(90%, 970px);
+            margin-inline: auto;
+        }
+
+        .header-container {
+            border-bottom: 1px solid;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+
+        .main-menu__items {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+
+            gap: 40px;
+            color: black;
+        }
+
+        .main-menu__link {
+            text-decoration: none;
+            color: #828282;
+            font: var(--font-size);
+        }
+
+        .main-menu__link:hover {
+            color: black;
+        }
+
+        /* header and */
+
+        /* start main - section 1 */
+        .container__title {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            margin-bottom: 50px;
+        }
+
+        .container__subject {
+            font: var(--font-size-subject);
+            letter-spacing: 0%;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .container__content {
+            display: flex;
+            width: 480px;
+            height: 210px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-shrink: 0;
+        }
+
+        /* and section 1 */
+
+        /* start section 2 - about me */
+        .about-me {
+            padding: 100px 0;
+            background-color: #F6F6F6;
+        }
+
+        .about-me__container {
+            max-width: 480px;
+            text-align: center;
+        }
+
+        .about-me__subject {
+            margin-bottom: 50px;
+        }
+
+        .about-me__text {
+            margin-bottom: 30px;
+        }
+
+        /* start section 3 - skills */
+        .skills {
+            padding: 100px 0;
+        }
+
+        .subject {
+            font: var(--font-size-subject);
+            letter-spacing: 0%;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .skills__text {
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .skills__list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skills__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .skills__picture {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 25px;
+        }
+
+        .skills__desc {
+            display: flex;
+            flex-direction: column;
+            color: #828282;
+            text-align: center;
+            font-family: "Open Sans";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: 0.28px;
+            margin-bottom: 60px;
+        }
+
+        /* start section portfolio */
+        .portfolio {
+            padding: 100px 0 30px;
+            background-color: #F6F6F6;
+        }
+
+        .portfolio__subject {
+            padding-bottom: 50px;
+        }
+
+        .portfolio__picture {
+            margin-bottom: 40px;
+        }
+
+        .portfolio__link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-bottom: 70px;
+            color: #070707;
+        }
+
+        /* start footer */
+        .footer {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer__text {
+            text-align: center;
+            padding-bottom: 60px;
+            width: 280px;
+        }
+
+        .footer__picture {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .footer__items {
+            display: flex;
+            list-style: none;
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+
+        .footer__link {
+            border-radius: 22px;
+            background-color: #070707;
+            color: #fff;
+            text-align: center;
+            font-family: "Open Sans";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: 1.8px;
+            display: block;
+            padding: 10px 16px;
+            margin-bottom: 30px;
+            text-decoration: none;
+        }
+
+        .footer__desc {
+            color: #828282;
+            text-align: center;
+            font-family: "Open Sans";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 200px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header" id="w1">
+            <div class="container header-container">
+                <nav class="main-menu">
+                    <ul class="main-menu__items">
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#w1">Home</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#w3">About me</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#w4">Skills</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#w5">Portfolio</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#w6">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="w2">
+                <div class="container">
+                    <h1 class="container__title">
+                        Denis Novik
+                    </h1>
+                    <img class="container__image" src="./picture/main_photo.jpg" alt="Denis-foto">
+                </div>
+            </section>
+            <!-- BEM 
+ B: block 'header'
+ E: element 'header__item'
+ M: modificator 'header__item-grey'
+
+-->
+            <section class="about-me gray" id="w3">
+                <div class="container about-me__container">
+                    <h2 class="about-me__subject subject">
+                        About me
+                    </h2>
+                    <div class="about-me__content">
+                        <p class="about-me__text">
+                            Hi, I'm Denis – UX/UI designer from Minsk.
+                            I'm interested in design and everything connected with it.
+                        </p>
+                        <p class="about-me__text">
+                            I'm studying at courses "Web and mobile design
+                            interfaces" in IT-Academy
+                        </p>
+                        <p class="about-me__text">
+                            Ready to implement excellent projects
+                            with wonderful people.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills" id="w4">
+                <div class="container skills__container">
+                    <hgroup>
+                        <h2 class="skills__subject subject">Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit amet.</p>
+                    </hgroup>
+
+                    <ul class="skills__list">
+
+                        <li class="skills__item">
+                            <img class="skills__picture" src="./picture/Ps.svg" alt="icon-photoshop">
+                            <div class="skills__desc">
+                                Adobe
+                                Photoshop
+                            </div>
+                            <div class="skills__rating">
+                                <img src="./picture/star-icon-active.svg" alt="icon-star-active">
+                                <img src="./picture/star-icon-active.svg" alt="icon-star-active">
+                                <img src="./picture/star-icon.svg" alt="icon-star">
+                                <img src="./picture/star-icon.svg" alt="icon-star">
+                                <img src="./picture/star-icon.svg" alt="icon-star">
+                            </div>
+                        </li>
+
+                        <li class="skills__item">
+                            <img class="skills__picture" src="./picture/Ai.svg" alt="icon-ai">
+                            <div class="skills__desc">
+                                Adobe
+                                Illustrator
+                            </div>
+
+                            <div class="skills__rating">
+                                <img src="./picture/star-icon-active.svg" alt="icon-star-active">
+                                <img src="./picture/star-icon-active.svg" alt="icon-star-active">
+                                <img src="./picture/star-icon-active.svg" alt="icon-star-active">
+                                <img src="./picture/star-icon.svg" alt="icon-star">
+                                <img src="./picture/star-icon.svg" alt="icon-star">
+                            </div>
+                        </li>
+
+                        <li class="skills__item">
+                            <img class="skills__picture" src="./picture/Ae.svg" alt="icon-ae">
+                            <div class="skills__desc">Adobe
+                                After Effects
+                            </div>
+
+                            <div class="skills__rating">
+                                <img src="./picture/star-icon-active.svg" alt="icon-star-active">
+                                <img src="./picture/star-icon-active.svg" alt="icon-star-active">
+                                <img src="./picture/star-icon-active.svg" alt="icon-star-active">
+                                <img src="./picture/star-icon-active.svg" alt="icon-star-active">
+                                <img src="./picture/star-icon.svg" alt="icon-star">
+                            </div>
+                        </li>
+
+                        <li class="skills__item">
+                            <img class="skills__picture" src="./picture/figma.svg" alt="icon-figma">
+                            <div class="skills__desc">Figma
+                            </div>
+                            <div class="skills__rating">
+                                <img src="./picture/star-icon-active.svg" alt="icon-star-active">
+                                <img src="./picture/star-icon-active.svg" alt="icon-star-active">
+                                <img src="./picture/star-icon-active.svg" alt="icon-star-active">
+                                <img src="./picture/star-icon-active.svg" alt="icon-star-active">
+                                <img src="./picture/star-icon-active.svg" alt="icon-star-active">
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <section class="portfolio" id="w5">
+                <div class="container">
+                    <h2 class="portfolio__subject subject">
+                        Portfolio
+                    </h2>
+
+                    <div>
+                        <img class="portfolio__picture" src="./picture/fashion-Store.jpg" alt="fashion-store">
+                        <a class="portfolio__link" href="#">Online fashion store - Homepage</a>
+                    </div>
+
+                    <div>
+                        <img class="portfolio__picture" src="./picture/reebok_web.jpg" alt="reebok">
+                        <a class="portfolio__link" href="#">Reebok Store - Concept</a>
+                    </div>
+
+                    <div>
+                        <img class="portfolio__picture" src="./picture/braun-landing.jpg" alt="braun">
+                        <a class="portfolio__link big" href="#">Braun Landing Page - Concept</a>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="w6">
+            <div class="footer__container container">
+                <hgroup class="footer__hgroup">
+                    <h2 class="footer__subject subject">
+                        Contacts
+                    </h2>
+                    <p class="footer__text">
+                        Want to know more or just chat?
+                        You are welcome!
+                    </p>
+                </hgroup>
+                <a class="footer__link" href="mailto:w.iv.von@gmail.com">Send message</a>
+                <ul class="footer__items">
+                    <li>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                            <img class="footer__picture" src="./picture/linkedin.svg" alt="logo-linkedin">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                            <img class="footer__picture" src="./picture/instagram.svg" alt="logo-instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">
+                            <img class="footer__picture" src="./picture/behance.svg" alt="logo-behance">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
+                            <img class="footer__picture" src="./picture/dribbble.svg" alt="logo-dribbble">
+                        </a>
+                    </li>
+                </ul>
+                <p class="footer__desc">
+                    Like me on
+                    LinkedIn, Instagram, Behance, Dribble
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
