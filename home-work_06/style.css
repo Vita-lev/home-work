@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* fonts */
+    --font: "Roboto", sans-serif;
+
+    /* colors */
+    --color-bg-header: #4A4F56;
+    --color-bg-body: #3B3F45;
+    --color-text: #FF8984;
+    --color-input-light: #88839E;
+    --color-input: #7A7593;
+    --color-input-hover: #625E77;
+    --color-text-white: #FFFFFF;
+    --color-text-after: #9B96AC;
+    --color-checkbox: #000000;
+}
+
+body {
+    background-color: var(--color-bg-body);
+    font-family: var(--font);
+}
+
+.header {
+    background-color: var(--color-bg-header);
+    color: #FF8984;
+    text-align: center;
+    padding-top: 19px;
+    padding-bottom: 12px;
+}
+
+.container {
+    max-width: 534px;
+    margin: 0 auto;
+}
+
+.header__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.header__sub-title {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* header and */
+.dinner-list {
+    background-color: var(--color-bg-body);
+    padding-top: 20px;
+}
+
+.dinner-list__list {
+    background-color: var(--color-input-light);
+}
+
+.dinner-list__item {
+    list-style: none;
+    color: var(--color-text-white);
+    padding: 12px 0 14px;
+    padding-left: 12px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    display: flex;
+    align-items: center;
+}
+
+.dinner-list__item:nth-child(2n) {
+    background-color: var(--color-input);
+}
+
+.dinner-list__label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dinner-list__label:after {
+    content: "(for the next lessons about CSS)";
+    font-size: 11px;
+}
+
+.dinner-list__item:nth-child(1) .dinner-list__label::after {
+    content: "(for the next lessons about CSS)";
+}
+
+.dinner-list__item:nth-child(2) .dinner-list__label::after {
+    content: " (for more CSS manipulations)";
+}
+
+.dinner-list__item:nth-child(3) .dinner-list__label::after {
+    content: " (because they are awesome)";
+}
+
+.dinner-list__item:nth-child(4) .dinner-list__label::after {
+    content: " (hm... they always dissapear)";
+}
+
+.dinner-list__item:nth-child(5) .dinner-list__label::after {
+    content: "";
+}
+
+.dinner-list__item:nth-child(6) .dinner-list__label::after {
+    content: " (for my friends)";
+}
+
+.dinner-list__item:hover {
+    background-color: var(--color-input-hover);
+    border-top: 3px solid var(--color-text-white);
+    border-bottom: 3px solid var(--color-text-white);
+}
+
+.dinner-list__input:checked+.dinner-list__label {
+    text-decoration: line-through;
+    color: var(--color-text-after);
+}
+
+.dinner-list__input {
+    width: 19px;
+    height: 19px;
+}
+
+.dinner-list__label {
+    padding-left: 16px;
+}
+
+.btn {
+    background-color: var(--color-bg-header);
+    color: var(--color-text);
+    padding: 12px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+}
