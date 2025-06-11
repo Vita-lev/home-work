@@ -29,30 +29,30 @@ body {
     background-color: var(--color-bg-header);
     color: #FF8984;
     text-align: center;
-    padding-top: 19px;
-    padding-bottom: 12px;
+    padding-top: 23px;
+    padding-bottom: 23px;
 }
 
 .container {
-    max-width: 534px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .header__title {
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 700;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 
 .header__sub-title {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 400;
 }
 
 /* header and */
 .dinner-list {
     background-color: var(--color-bg-body);
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .dinner-list__list {
@@ -62,8 +62,7 @@ body {
 .dinner-list__item {
     list-style: none;
     color: var(--color-text-white);
-    padding: 12px 0 14px;
-    padding-left: 12px;
+    padding: 20px 15px;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
     display: flex;
@@ -78,11 +77,12 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
+    font-size: 27px;
 }
 
 .dinner-list__label:after {
     content: "(for the next lessons about CSS)";
-    font-size: 11px;
+    font-size: 17px;
 }
 
 .dinner-list__item:nth-child(1) .dinner-list__label::after {
@@ -121,21 +121,22 @@ body {
 }
 
 .dinner-list__input {
-    width: 19px;
-    height: 19px;
+    width: 28px;
+    height: 28px;
+    /* padding: 20px 0 20px; */
 }
 
 .dinner-list__label {
-    padding-left: 16px;
+    padding-left: 15px;
 }
 
 .btn {
     background-color: var(--color-bg-header);
     color: var(--color-text);
-    padding: 12px;
+    padding: 20px;
     margin-top: 45px;
     margin-bottom: 45px;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 400;
     width: 100%;
 }
