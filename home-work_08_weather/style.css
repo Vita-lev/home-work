@@ -89,6 +89,11 @@ body {
     font-weight: 400;
 }
 
+.text {
+    font-size: 16px;
+    font-weight: 400;
+}
+
 .weather-table {
     display: flex;
     flex-wrap: wrap;
@@ -103,12 +108,20 @@ body {
     width: 25%;
     border: 1px solid var(--color-text);
     opacity: 0.7;
+    color: var(--color-text);
+    transition: all 0.5s;
 }
 
 .weather-table__item:hover {
     opacity: 1;
     cursor: pointer;
     box-shadow: 0px 0px 49px -19px rgba(0, 0, 0, 0.75) inset;
+}
+
+.weather-table__item:active {
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 0px 0px 49px -30px rgba(0, 0, 0, 0.75) inset;
 }
 
 .weather-table__row {
