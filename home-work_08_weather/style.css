@@ -1,0 +1,135 @@
+:root {
+    --color-bg: #3399CC;
+    --color-bordef: #2B81AC;
+    --color-text: #FFFFFF;
+    --color-text-70: #FFFFFFB2;
+
+    --color-lisbon: #3399CC;
+    --color-paris: #33CCCC;
+    --color-belgrade: #996699;
+    --color-venice: #C24747;
+    --color-tel-avive: #E2674A;
+    --color-cair: #FFCC66;
+    --color-new-york: #99CC99;
+    --color-new-delhi: #669999;
+    --color-san-francicko: #CC6699;
+    --color-tokyo: #339966;
+    --color-sydney: #666699;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 25px solid var(--color-bordef);
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1166px;
+    margin: 0 auto;
+    padding: 60px 100px;
+}
+
+.bg--lisbon {
+    background-color: var(--color-lisbon);
+}
+
+.bg--paris {
+    background-color: var(--color-paris);
+}
+
+.bg--belgrade {
+    background-color: var(--color-belgrade);
+}
+
+.bg--venice {
+    background-color: var(--color-venice);
+}
+
+.bg--tel-avive {
+    background-color: var(--color-tel-avive);
+}
+
+.bg--cair {
+    background-color: var(--color-cair);
+}
+
+.bg--new-york {
+    background-color: var(--color-new-york);
+}
+
+.bg--new-delhi {
+    background-color: var(--color-new-delhi);
+}
+
+.bg--san-francisco {
+    background-color: var(--color-san-francicko);
+}
+
+.bg--tokyo {
+    background-color: var(--color-tokyo);
+}
+
+.bg--sydney {
+    background-color: var(--color-sydney);
+}
+
+.title {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.weather-table {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid var(--color-text);
+    background-color: var(--color-text);
+
+    margin: 37px 0;
+}
+
+.weather-table__item {
+    padding: 26px;
+    width: 25%;
+    border: 1px solid var(--color-text);
+    opacity: 0.7;
+}
+
+.weather-table__item:hover {
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 0px 0px 49px -19px rgba(0, 0, 0, 0.75) inset;
+}
+
+.weather-table__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.weather-table__title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.weather-table__item:first-child,
+.weather-table__item:nth-child(9) {
+    width: 50%;
+}
+
+.weather-table__item:last-child {
+    width: 100%;
+}
