@@ -21,7 +21,6 @@ a {
 
 li {
     list-style: none;
-    
 }
 
 body {
@@ -34,7 +33,6 @@ line-height: 26px;
 .header {
     padding: 17px 0;
     margin-bottom: 70px;
-
 }
 
 .container {
@@ -60,9 +58,7 @@ line-height: 26px;
     gap: 20px;
 }
 
-.header__item {
-
-}
+.header__item {}
 
 .header__link {
     cursor: pointer;
@@ -95,8 +91,18 @@ justify-content: center;
 align-items: center;
 border-radius: 4px;
 background: $color--orange;
-}
+cursor: pointer;
 
+&:hover {
+    background-color: $color--coral;
+}
+&:active {
+    background-color: $color-coral-secondary;
+}
+&:disabled {
+    background-color: $color--gray-light;
+}
+}
 
 .button--secondary {
 border-radius: 4px;
