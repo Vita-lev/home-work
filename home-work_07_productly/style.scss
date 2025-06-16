@@ -121,6 +121,11 @@ color: $color--brawn-dark;
     color: $color-coral-secondary;
     border-color: $color-coral-secondary;
 }
+&:disabled {
+    background-color: $color--primary;
+    color: $color--gray-light;
+    border-color: $color--gray-light;
+}
 }
 
 //header and
