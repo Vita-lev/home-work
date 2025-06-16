@@ -112,12 +112,14 @@ border: 1px solid $color--brawn-dark;
 background: $color--primary;
 color: $color--brawn-dark;
 &:hover {
-    background-color: $color--gray-light;
+    background-color: $color--primary;
     color: $color--coral;
+    border-color: $color-salmon;
 }
 &:active {
-    background-color: $color--gray-light;
+    background-color: $color--primary;
     color: $color-coral-secondary;
+    border-color: $color-coral-secondary;
 }
 }
 
