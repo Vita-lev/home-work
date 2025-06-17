@@ -1,6 +1,7 @@
 @use "./style/variable/color";
 @use "./style/global/global.scss";
 @use "./style/global/header.scss";
+@use "./style/global/footer.scss";
 // переделать на CSS
 
 //hero start
@@ -40,7 +41,6 @@
   &__title {
     max-width: 539px;
     margin-bottom: 50px;
-
     text-align: center;
   }
   &__row {

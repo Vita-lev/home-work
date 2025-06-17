@@ -13,23 +13,7 @@
     align-items: center;
     gap: 20px;
   }
-  &__link {
-    cursor: pointer;
-    &:hover {
-      color: var(--color-coral);
-    }
 
-    &:active {
-      color: var(--color-coral-secondary);
-    }
-
-    &:disabled {
-      color: var(--color-gray-light);
-    }
-  }
-  &__link--active {
-    color: var(--color-orange);
-  }
   &__button-group {
     display: flex;
     gap: 32px;

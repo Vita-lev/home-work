@@ -1,0 +1,22 @@
+.footer {
+  padding: 70px 0;
+  border-top: 1px solid var(--color-gray-light);
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__nav {
+  }
+  &___form {
+    max-width: 340px;
+  }
+  &__title {
+    margin-bottom: 30px;
+    max-width: 280px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
