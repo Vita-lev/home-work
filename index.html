@@ -1,193 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my_home-works</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Henny+Penny&family=Rubik+Gemstones&display=swap"
-        rel="stylesheet">
-
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Henny+Penny&family=Rubik+Gemstones&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
-        .title {
-            text-align: center;
-            font-family: "Rubik Gemstones", system-ui;
-            font-weight: 400;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 50px;
-            text-shadow: 4px 4px 0px rgba(136, 155, 255, 1);
-            /* letter-spacing: 1px;
+      .title {
+        text-align: center;
+        font-family: "Rubik Gemstones", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        text-shadow: 4px 4px 0px rgba(136, 155, 255, 1);
+        /* letter-spacing: 1px;
             text-shadow: 4px 4px 0px rgba(136, 155, 255, 1); */
+      }
 
-        }
+      .form {
+        display: grid;
+        grid-template-columns: 280px 280px 280px;
+        list-style: none;
+        gap: 20px;
+        justify-content: center;
+      }
 
-        .form {
-            display: grid;
-            grid-template-columns: 280px 280px 280px;
-            list-style: none;
-            gap: 20px;
-            justify-content: center;
+      .form__list {
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 55px -22px rgba(0, 0, 0, 0.63);
+      }
 
-        }
+      .form__link {
+        text-decoration: none;
+        color: black;
+      }
 
-        .form__list {
-            padding: 10px;
-            border-radius: 15px;
-            box-shadow: 10px 10px 55px -22px rgba(0, 0, 0, 0.63);
-        }
+      .form__image {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
 
-        .form__link {
-            text-decoration: none;
-            color: black;
-        }
+      .form__data {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+      }
 
-        .form__image {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
+      .form__text {
+      }
 
-        .form__data {
-            display: flex;
-            justify-content: space-between;
-            align-items: end;
-        }
+      .form__title {
+      }
 
-        .form__text {}
+      .form__description {
+      }
 
-        .form__title {}
-
-        .form__description {}
-
-        .color-green {
-            color: green;
-            font-size: 30px;
-
-        }
+      .color-green {
+        color: green;
+        font-size: 30px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1 class="title">Homeworks</h1>
 
     <ul class="form">
-        <li class="form__list">
-            <a class="form__link" href="./home-work_01/" target="_blank">
-                <img class="form__image" src="./image/img-home-work-01.png" alt="home-01" width="250px">
-                <div class="form__data">
-                    <p class="form__text"><b class="color-green">01</b> lesson</p>
-                    <p class="form__text">25 May, 2025</p>
-                </div>
-                <h2 class="form__title">Busines card</h2>
-                <p class="form__description">my busines cart</p>
+      <li class="form__list">
+        <a class="form__link" href="./home-work_01/" target="_blank">
+          <img
+            class="form__image"
+            src="./image/img-home-work-01.png"
+            alt="home-01"
+            width="250px"
+          />
+          <div class="form__data">
+            <p class="form__text"><b class="color-green">01</b> lesson</p>
+            <p class="form__text">25 May, 2025</p>
+          </div>
+          <h2 class="form__title">Busines card</h2>
+          <p class="form__description">my busines cart</p>
+        </a>
+      </li>
 
-            </a>
-        </li>
+      <li class="form__list">
+        <a class="form__link" href="./home-work_02/" target="_blank">
+          <img
+            class="form__image"
+            src="./image/img-home-work-02.png"
+            alt="home-01"
+            width="250px"
+          />
+          <div class="form__data">
+            <p class="form__text"><b class="color-green">02</b> lesson</p>
+            <p class="form__text">27 May, 2025</p>
+          </div>
+          <h2 class="form__title">Resume</h2>
+          <h3 class="form__description">HTML + CSS + BEM</h3>
+        </a>
+      </li>
 
+      <li class="form__list">
+        <a class="form__link" href="./home-work_03/" target="_blank">
+          <img
+            class="form__image"
+            src="./image/img-home-work-03.png"
+            alt="home-01"
+            width="250px"
+          />
+          <div class="form__data">
+            <p class="form__text"><b class="color-green">03</b> lesson</p>
+            <p class="form__text">29 May, 2025</p>
+          </div>
+          <h2 class="form__title">Denis Novik</h2>
+          <h3 class="form__description">only HTML</h3>
+        </a>
+      </li>
 
+      <li class="form__list">
+        <a class="form__link" href="./home-work_04/" target="_blank">
+          <img
+            class="form__image"
+            src="./image/img-home-work-04.png"
+            alt="home-01"
+            width="250px"
+          />
+          <div class="form__data">
+            <p class="form__text"><b class="color-green">04</b> lesson</p>
+            <p class="form__text">2 June, 2025</p>
+          </div>
+          <h2 class="form__title">Form</h2>
+          <h3 class="form__description">My registration form</h3>
+        </a>
+      </li>
 
+      <li class="form__list">
+        <a
+          class="form__link"
+          href="./home-work_05/Denis Novik/"
+          target="_blank"
+        >
+          <img
+            class="form__image"
+            src="./image/img-home-work-05.png"
+            alt="home-01"
+            width="250px"
+          />
+          <div class="form__data">
+            <p class="form__text"><b class="color-green">05</b> lesson</p>
+            <p class="form__text">6 June, 2025</p>
+          </div>
+          <h2 class="form__title">Denis Novik (fix hover)</h2>
+          <h3 class="form__description">Introduction to CSS</h3>
+        </a>
+      </li>
 
-        <li class="form__list">
-            <a class="form__link" href="./home-work_02/" target="_blank">
-                <img class="form__image" src="./image/img-home-work-02.png" alt="home-01" width="250px">
-                <div class="form__data">
-                    <p class="form__text"><b class="color-green">02</b> lesson</p>
-                    <p class="form__text">27 May, 2025</p>
-                </div>
-                <h2 class="form__title">Resume</h2>
-                <h3 class="form__description">HTML + CSS + BEM</h3>
+      <li class="form__list">
+        <a class="form__link" href="./home-work_06" target="_blank">
+          <img
+            class="form__image"
+            src="./image/img-home-work-06.png"
+            alt="home-01"
+            width="250px"
+          />
+          <div class="form__data">
+            <p class="form__text"><b class="color-green">06</b> lesson</p>
+            <p class="form__text">9 June, 2025</p>
+          </div>
+          <h2 class="form__title">Dinner List</h2>
+          <h3 class="form__description">CSS Dinner Shopping List</h3>
+        </a>
+      </li>
 
-            </a>
-        </li>
+      <li class="form__list">
+        <a
+          class="form__link"
+          href="./home-work_08_weather/index.html"
+          target="_blank"
+        >
+          <img
+            class="form__image"
+            src="./image/img-home-work-07.png"
+            alt="home-01"
+            width="250px"
+          />
+          <div class="form__data">
+            <p class="form__text"><b class="color-green">07</b> lesson</p>
+            <p class="form__text">14 June, 2025</p>
+          </div>
+          <h2 class="form__title">Weather</h2>
+          <h3 class="form__description">CSS Box Model</h3>
+        </a>
+      </li>
 
-
-
-        <li class="form__list">
-            <a class="form__link" href="./home-work_03/" target="_blank">
-                <img class="form__image" src="./image/img-home-work-03.png" alt="home-01" width="250px">
-                <div class="form__data">
-                    <p class="form__text"><b class="color-green">03</b> lesson</p>
-                    <p class="form__text">29 May, 2025</p>
-                </div>
-                <h2 class="form__title">Denis Novik</h2>
-                <h3 class="form__description">only HTML</h3>
-
-            </a>
-        </li>
-
-        <li class="form__list">
-            <a class="form__link" href="./home-work_04/" target="_blank">
-                <img class="form__image" src="./image/img-home-work-04.png" alt="home-01" width="250px">
-                <div class="form__data">
-                    <p class="form__text"><b class="color-green">04</b> lesson</p>
-                    <p class="form__text">2 June, 2025</p>
-                </div>
-                <h2 class="form__title">Form</h2>
-                <h3 class="form__description">My registration form</h3>
-            </a>
-        </li>
-
-        <li class="form__list">
-            <a class="form__link" href="./home-work_05/Denis Novik/" target="_blank">
-                <img class="form__image" src="./image/img-home-work-05.png" alt="home-01" width="250px">
-                <div class="form__data">
-                    <p class="form__text"><b class="color-green">05</b> lesson</p>
-                    <p class="form__text">6 June, 2025</p>
-                </div>
-                <h2 class="form__title">Denis Novik (fix hover)</h2>
-                <h3 class="form__description">
-                    Introduction to CSS</h3>
-            </a>
-        </li>
-
-        <li class="form__list">
-            <a class="form__link" href="./home-work_06" target="_blank">
-                <img class="form__image" src="./image/img-home-work-06.png" alt="home-01" width="250px">
-                <div class="form__data">
-                    <p class="form__text"><b class="color-green">06</b> lesson</p>
-                    <p class="form__text">9 June, 2025</p>
-                </div>
-                <h2 class="form__title">Dinner List</h2>
-                <h3 class="form__description">
-                    CSS Dinner Shopping List</h3>
-            </a>
-        </li>
-
-         <li class="form__list">
-            <a class="form__link" href="./home-work_08_weather/index.html" target="_blank">
-                <img class="form__image" src="./image/img-home-work-07.png" alt="home-01" width="250px">
-                <div class="form__data">
-                    <p class="form__text"><b class="color-green">07</b> lesson</p>
-                    <p class="form__text">14 June, 2025</p>
-                </div>
-                <h2 class="form__title">Weather</h2>
-                <h3 class="form__description">
-                    CSS Box Model</h3>
-            </a>
-        </li>
-
-         <li class="form__list">
-            <a class="form__link" href="./home-work_07_productly/index.html" target="_blank">
-                <img class="form__image" src="./image/img-home-work-08.png" alt="home-01" width="250px">
-                <div class="form__data">
-                    <p class="form__text"><b class="color-green">08</b> lesson</p>
-                    <p class="form__text">16 June, 2025</p>
-                </div>
-                <h2 class="form__title">Productly</h2>
-                <h3 class="form__description">
-                    SCSS</h3>
-            </a>
-        </li>
-
-
+      <li class="form__list">
+        <a
+          class="form__link"
+          href="./home-work_07_productly/index.html"
+          target="_blank"
+        >
+          <img
+            class="form__image"
+            src="./image/img-home-work-08.png"
+            alt="home-01"
+            width="250px"
+          />
+          <div class="form__data">
+            <p class="form__text"><b class="color-green">08</b> lesson</p>
+            <p class="form__text">16 June, 2025</p>
+          </div>
+          <h2 class="form__title">Productly</h2>
+          <h3 class="form__description">SCSS + footer</h3>
+        </a>
+      </li>
     </ul>
-
-</body>
-
+  </body>
 </html>
