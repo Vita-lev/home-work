@@ -33,6 +33,7 @@
 
 //features start
 .features {
+  margin-bottom: 100px;
   &__container {
     display: flex;
     flex-direction: column;
@@ -69,10 +70,12 @@
 
 //benefits start
 .benefits {
+  margin-bottom: 100px;
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 113px;
   }
   &__content {
   }
@@ -109,4 +112,9 @@
 
 //marketers start
 .marketers {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
