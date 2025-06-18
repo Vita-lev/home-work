@@ -89,10 +89,12 @@
 
 //managers start
 .managers {
+  margin-bottom: 100px;
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 125px;
   }
   &__image {
   }
@@ -112,9 +114,11 @@
 
 //marketers start
 .marketers {
+  margin-bottom: 100px;
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 174px;
   }
 }
