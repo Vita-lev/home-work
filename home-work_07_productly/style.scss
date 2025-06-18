@@ -33,7 +33,12 @@
 
 //features start
 .features {
+  background-image: url(./picture/bg.svg);
+  background-position: 40% bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-bottom: 100px;
+  padding-bottom: 70px;
   &__container {
     display: flex;
     flex-direction: column;
@@ -75,11 +80,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 113px;
+    gap: 20px;
   }
   &__content {
+    max-width: 525px;
   }
   &__text {
+    margin-bottom: 30px;
   }
   &__headline {
   }
@@ -94,11 +101,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 125px;
+    gap: 20px;
   }
   &__image {
   }
   &__content {
+    max-width: 505px;
   }
   &__text {
   }
@@ -107,6 +115,9 @@
   &__list {
   }
   &__item {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
   }
   &__icon {
   }
@@ -119,6 +130,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 174px;
+    gap: 20px;
+  }
+  &__content {
+    max-width: 486px;
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+  &__title {
+  }
+  &__headline {
   }
 }
