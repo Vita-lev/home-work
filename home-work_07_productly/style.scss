@@ -66,3 +66,47 @@
   &__button {
   }
 }
+
+//benefits start
+.benefits {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content {
+  }
+  &__text {
+  }
+  &__headline {
+  }
+  &__image {
+  }
+}
+
+//managers start
+.managers {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__image {
+  }
+  &__content {
+  }
+  &__text {
+  }
+  &__title {
+  }
+  &__list {
+  }
+  &__item {
+  }
+  &__icon {
+  }
+}
+
+//marketers start
+.marketers {
+}
