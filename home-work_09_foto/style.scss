@@ -1,0 +1,144 @@
+:root {
+  --color-white: #fff;
+  --color-blure: #e0e0e0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.section {
+  margin: 120px 0;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.title {
+  font-family: "Delius Unicase", cursive;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-template-rows: repeat(3, 370px);
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+
+  background: var(
+      --card-bg-gradient,
+      linear-gradient(
+        0deg,
+        #241f24 0%,
+        rgba(91, 91, 91, 0.45) 34.11%,
+        rgba(187, 186, 192, 0.26) 62.5%
+      )
+    ),
+    var(--card-picture, url(./picture/image-1.jpg));
+
+  //   background: var(
+  //       --card-bg-gradient,
+  //       linear-gradient(
+  //         0deg,
+  //         #241f24 0%,
+  //         rgba(91, 91, 91, 0.45) 34.11%,
+  //         rgba(187, 186, 192, 0.26) 62.5%
+  //       )
+  //     ),
+  //     var(--card-picture, url(./picture/image-1.jpg));
+
+  &:hover {
+    --button-group-opacity: 1;
+    --card-bg-gradient: linear-gradient(
+      0deg,
+      #241f24 1.04%,
+      rgba(91, 91, 91, 0.26) 6.99%,
+      rgba(187, 186, 192, 0) 12.29%
+    );
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  &__button-grup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    opacity: var(--button-group-opacity, 0);
+    transition: all 0.5s;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: none;
+    outline: none;
+    width: 40px;
+    padding: 10px;
+
+    opacity: 0.7;
+
+    cursor: pointer;
+    border-radius: 8px;
+    background: var(--color-blure);
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+  }
+
+  &__desc {
+    font-weight: 500;
+    color: var(--color-white);
+  }
+
+  &__data {
+    font-weight: 400;
+    color: var(--color-blure);
+  }
+
+  &--2 {
+    --card-picture: url(./picture/image-2.jpg);
+    grid-column: span 2;
+  }
+  &--3 {
+    --card-picture: url(./picture/image-3.jpg);
+    grid-column: span 2;
+  }
+  &--4 {
+    --card-picture: url(./picture/image-4.jpg);
+  }
+  &--5 {
+    --card-picture: url(./picture/image-5.jpg);
+  }
+  &--6 {
+    --card-picture: url(./picture/image-6.jpg);
+    grid-column: span 2;
+  }
+  &--7 {
+    --card-picture: url(./picture/image-7.jpg);
+  }
+}
