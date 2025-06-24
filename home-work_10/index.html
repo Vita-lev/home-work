@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <form class="form" action="">
+          <h2 class="form__title">Create an Account</h2>
+          <div class="form__row">
+            <div class="form__first-name">
+              <label for="first-name">First Name</label>
+              <input
+                class="input"
+                type="text"
+                id="first-name"
+                name="first-name"
+                autocomplete="first-name"
+                min="2"
+                required
+              />
+            </div>
+            <div class="form__last-name">
+              <label for="last-name">Last Name</label>
+              <input
+                class="input"
+                type="text"
+                id="last-name"
+                name="last-name"
+                autocomplete="last-name"
+                min="2"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form__email">
+            <label for="email">E-mail</label>
+            <input
+              class="form__emeil-input input"
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+            <p class="form__email-text">
+              We'll never share your email with anyone else.
+            </p>
+          </div>
+
+          <div class="form__radio">
+            <input
+              class="form__radio-input"
+              type="radio"
+              id="male"
+              name="sex"
+              checked
+              required
+            /><label for="male" id="male">Male</label>
+
+            <input
+              class="form__radio-input"
+              type="radio"
+              id="female"
+              name="sex"
+              required
+            /><label for="female" id="female">Female</label>
+          </div>
+
+          <div class="form__row">
+            <div class="form__country">
+              <label for="country">Country</label>
+              <select class="select" name="country" id="country" required>
+                <option aria-placeholder="select">select</option>
+                <option value="ukr">Ukraine</option>
+                <option value="ukr">Great Britan</option>
+                <option value="ukr">USA</option>
+              </select>
+            </div>
+
+            <div class="form__city">
+              <label for="city">City</label>
+              <input class="input" type="text" id="city" required min="2" />
+            </div>
+          </div>
+
+          <button class="form__button btn" type="submit">Sign Up</button>
+          <p class="form__text smoll">
+            By clicking the 'Sign Up' button, you confirm that you accept our
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+          </p>
+
+          <div class="form__footer">
+            <p>Have an account?</p>
+            <a href="#">Log In</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
