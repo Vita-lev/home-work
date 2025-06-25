@@ -29,6 +29,9 @@ body {
   border-radius: 6px;
   border: 1px solid var(--color-border);
   color: var(--color-white);
+
+  position: relative;
+  right: 140px;
 }
 
 .form {
@@ -52,7 +55,6 @@ body {
     display: flex;
     justify-content: start;
     align-items: end;
-
     width: 100%;
   }
   &__group {
