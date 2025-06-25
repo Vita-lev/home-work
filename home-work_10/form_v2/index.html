@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>form 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.min.css" />
   </head>
   <body>
     <div class="wrapper">
       <form class="form" action="">
         <h2 class="form__title">Profile</h2>
         <div class="form__button-group">
-          <img src="" alt="" />
+          <img src="./📷 Image.jpg" alt="foto" width="80" />
           <div class="form__button-wrap">
             <button></button>
             <span>Up to 1 MB (300x300 px)</span>
@@ -44,6 +51,59 @@
             />
           </div>
         </div>
+
+        <div class="form__group">
+          <div class="form__input-wrap">
+            <label class="form__label" for="inp3">Country</label>
+            <select name="country" id="inp3">
+              <option value="country">Ukraine</option>
+              <option value="country">USA</option>
+              <option value="country">Great Britain</option>
+            </select>
+          </div>
+
+          <div class="form__input-wrap">
+            <label class="form__label" for="inp4">City</label>
+            <input
+              class="form__input"
+              type="text"
+              id="inp4"
+              name="city"
+              min="2"
+              autocomplete=""
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form__group">
+          <div class="form__input-wrap">
+            <label class="form__label" for="inp5">Zip Code</label>
+            <input
+              class="form__input"
+              type="text"
+              id="inp5"
+              name="zip-code"
+              min="2"
+              required
+            />
+          </div>
+
+          <div class="form__input-wrap">
+            <label class="form__label" for="inp6">Phone Number</label>
+            <input
+              class="form__input"
+              type="tel"
+              id="inp6"
+              name="tel"
+              min="5"
+              autocomplete="tel"
+              required
+            />
+          </div>
+        </div>
+
+        <button class="btn" type="submit">Update</button>
       </form>
     </div>
   </body>
