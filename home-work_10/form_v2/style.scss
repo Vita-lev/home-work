@@ -56,7 +56,15 @@ body {
     justify-content: start;
     align-items: end;
     width: 100%;
+    gap: 20px;
   }
+  &__button-wrap {
+    // gap: 10px;
+  }
+
+  // &__button {
+  //   gap: 10px;
+  // }
   &__group {
     display: flex;
     gap: 10px;
