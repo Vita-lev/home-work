@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .form__input-wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+      }
+      .form__radio-wrap {
+        display: flex;
+        gap: 7px;
+        align-items: center;
+      }
+      .form__goup {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+      }
+      .form__goup-radio {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form class="form">
+        <h2 class="form__tile">Registration</h2>
+
+        <div class="form__input-wrap">
+          <label for="inp1" class="form__label">Name</label>
+          <input id="inp1" type="text" class="form__input" />
+        </div>
+
+        <div class="form__goup">
+          <div class="form__input-wrap">
+            <label for="inp3" class="form__label">Name</label>
+            <input id="inp3" type="text" class="form__input" />
+          </div>
+
+          <div class="form__input-wrap">
+            <label for="inp2" class="form__label">Last name</label>
+            <input id="inp2" type="text" class="form__input" />
+          </div>
+        </div>
+
+        <div class="form__goup">
+          <div class="form__input-wrap">
+            <label for="inp3" class="form__label">Name</label>
+            <input id="inp3" type="text" class="form__input" />
+          </div>
+
+          <div class="form__input-wrap">
+            <label for="inp2" class="form__label">Last name</label>
+            <input id="inp2" type="text" class="form__input" />
+          </div>
+        </div>
+        <div class="form__goup-radio">
+          <div class="form__radio-wrap">
+            <input type="radio" class="form__radio" />
+            <label class="form__radio-label" for="">Male</label>
+          </div>
+          <div class="form__radio-wrap">
+            <input type="radio" class="form__radio" />
+            <label class="form__radio-label" for="">Femail</label>
+          </div>
+        </div>
+
+        <button class="button">Submit</button>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nam
+          iure accusantium ullam nisi soluta minima in iste error tempora.
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
