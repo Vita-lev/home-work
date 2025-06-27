@@ -6,6 +6,7 @@
   --color-text: #545454;
   --color-title: #1c1c1c;
   --color-button: #007bff;
+  --color-hover: #f83e91;
 }
 
 * {
@@ -59,18 +60,21 @@ a {
   margin-bottom: 22px;
   border-radius: 6px;
   color: var(--color-gray);
+  &:hover {
+    background-color: var(--color-hover);
+    color: var(--color-title);
+  }
 }
 
 .smoll {
-  display: block;
-  justify-content: center;
-
+  // display: block;
+  // justify-content: center;
   text-align: center;
   //   padding-bottom: 20px;
   //   border-bottom: 1px solid var(--color-gray2);
   font-size: 13px;
   color: var(--color-light-gray);
-  max-width: 410px;
+  // max-width: 410px;
   text-align: center;
 }
 
@@ -108,8 +112,13 @@ a {
     margin-bottom: 20px;
     color: var(--color-light-gray);
   }
-  &__radio {
+
+  &__radio-wrap {
     display: flex;
+    gap: 20px;
+  }
+  &__radio {
+    // display: flex;
 
     margin-bottom: 20px;
   }
@@ -123,10 +132,6 @@ a {
   }
 
   &__text-wrap {
-    display: block;
-    justify-content: center;
-
-    text-align: center;
   }
 
   &__footer {
