@@ -122,6 +122,13 @@ a {
     gap: 7px;
   }
 
+  &__text-wrap {
+    display: block;
+    justify-content: center;
+
+    text-align: center;
+  }
+
   &__footer {
     margin-top: 20px;
     display: flex;
