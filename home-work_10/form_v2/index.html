@@ -17,8 +17,13 @@
       <form class="form" action="">
         <h2 class="form__title">Profile</h2>
         <div class="form__button-group">
-          <img src="./assets/📷 Image.jpg" alt="foto" width="80" />
-          <div class="form__button-wrap">
+          <img
+            class="form__button-picure"
+            src="./assets/📷 Image.jpg"
+            alt="foto"
+            width="80"
+          />
+          <!-- <div class="form__button-wrap">
             
             <button class="form__button"><input type="file">
               <svg
@@ -54,10 +59,22 @@
             </svg>
              </button>
             
-            <!-- <span class="form__smoll-text">Up to 1 MB (300x300 px)</span> -->
-            <p class="form__smoll-text">Up to 1 MB (300x300 px)</p>
+            <span class="form__smoll-text">Up to 1 MB (300x300 px)</span> -->
+          <!-- <p class="form__smoll-text">Up to 1 MB (300x300 px)</p>
           </div>
-         
+          -->
+          <div class="form__button-wrap">
+            <div class="form__button-row">
+              <div class="form__button-input">
+                <img src="./assets/photo-camera.svg" alt="camera" />
+              </div>
+              <div class="form__button-reset">
+                <img src="./assets/trash.svg" alt="trash" />
+              </div>
+            </div>
+
+            <div class="form__smoll-text">Up to 1 MB (300x300 px)</div>
+          </div>
         </div>
 
         <div class="form__group">
@@ -91,6 +108,7 @@
           <div class="form__input-wrap">
             <label class="form__label" for="inp3">Country</label>
             <select class="form__input" name="country" id="inp3">
+              <option value="select">select</option>
               <option value="country">Ukraine</option>
               <option value="country">USA</option>
               <option value="country">Great Britain</option>
