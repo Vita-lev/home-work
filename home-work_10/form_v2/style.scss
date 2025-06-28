@@ -64,6 +64,9 @@ body {
     gap: 20px;
   }
 
+  &__button-wrap {
+  }
+
   &__button-input {
     width: 138px;
     height: 30px;
@@ -71,6 +74,7 @@ body {
     flex-shrink: 0;
 
     color: var(--color-white);
+    border-radius: 5px;
   }
 
   &__button-reset {
