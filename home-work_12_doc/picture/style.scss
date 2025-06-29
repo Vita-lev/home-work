@@ -1,0 +1,38 @@
+:root {
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+a {
+  text-decoration: none;
+}
+
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+  }
+  &__group {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  &__end {
+  }
+  &__nav {
+  }
+  &__item {
+  }
+  &__logo {
+  }
+}
