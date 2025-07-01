@@ -1,3 +1,32 @@
 .menu {
-  background-color: aqua;
+  position: sticky;
+  top: 100px;
+  align-self: start;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  // display: flex;
+  // gap: 30px;
+  // padding: 10px;
+
+  &____list {
+  }
+
+  &__item {
+    margin-bottom: 70px;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  &__link {
+    margin-bottom: 80px;
+
+    &:hover {
+      color: var(--color-hover);
+    }
+  }
 }

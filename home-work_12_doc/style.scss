@@ -3,7 +3,15 @@
 @use "./style/article.scss";
 
 :root {
-  --font-aside: "Staatliches", sans-serif;
+  --font-family: "Staatliches", sans-serif;
+  --font-text: "PT Sans", sans-serif;
+  --font-chapter: "Farro", sans-serif;
+
+  --color-border: #bdbdbd;
+  --color-text: #000000;
+  --color-bg-text: #dadada;
+  --color-white: #fff;
+  --color-hover: rgb(28, 127, 53);
 }
 
 * {
@@ -12,15 +20,35 @@
   box-sizing: border-box;
 }
 
+body {
+  color: var(--color-text);
+}
+
 .container {
   margin: 0 auto;
   max-width: 1200px;
 }
+
+li,
 a {
+  list-style: none;
   text-decoration: none;
+  color: var(--color-text);
 }
 
 .grid {
   display: grid;
   grid-template-columns: 385px 1fr;
+  gap: 30px;
+
+  padding-top: 150px;
+}
+
+.main {
+  background-image: url(/home-work_12_doc/picture/bg-picture.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.aside {
 }

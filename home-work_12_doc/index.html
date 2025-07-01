@@ -11,6 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="wrapper">
@@ -39,18 +47,28 @@
               <li class="menu__item">
                 <a class="menu__link" href="#">Introduction</a>
               </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">core components</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">react fundamentals</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">handling text input</a>
+              </li>
             </ul>
           </nav>
         </aside>
 
         <main class="main">
           <article class="article">
+            <div class="article__line"></div>
             <h2 class="article__title">
               Introduction
 
               <span class="article__chapter"> Chapter 1 </span>
             </h2>
-            <p class="article__text">
+            <p class="article__text text-bottom">
               Welcome to the very start of your React Native journey! If you're
               looking for environment setup instructions, they've moved to their
               own section. Continue reading for an introduction to the
@@ -59,71 +77,173 @@
           </article>
 
           <article class="article">
+            <div class="article__line"></div>
             <h2 class="article__title">
-              Introduction
+              core components
 
-              <span class="article__chapter"> Chapter 1 </span>
+              <span class="article__chapter"> Chapter 2 </span>
             </h2>
-            <p class="article__text">
-              Welcome to the very start of your React Native journey! If you're
-              looking for environment setup instructions, they've moved to their
-              own section. Continue reading for an introduction to the
-              documentation, Native Components, React, and more!
+            <p class="article__text text-bottom">
+              React Native is an open source framework for building Android and
+              iOS applications using React and the app platform’s native
+              capabiles. With React Native, you use JavaScript to access your
+              platform’s APIs as well as to describe the appearance and behavior
+              of your UI using React components: bundles of reusable, nestable
+              code. You can learn more about React in the next section. But
+              first, let’s cover how components work in React Native.
             </p>
           </article>
           <article class="article">
+            <div class="article__line"></div>
             <h2 class="article__title">
-              Introduction
+              react fundamentals
 
-              <span class="article__chapter"> Chapter 1 </span>
+              <span class="article__chapter"> Chapter 3 </span>
             </h2>
             <p class="article__text">
-              Welcome to the very start of your React Native journey! If you're
-              looking for environment setup instructions, they've moved to their
-              own section. Continue reading for an introduction to the
-              documentation, Native Components, React, and more!
+              React Native runs on React, a popular open source library for
+              building user interfaces with JavaScript. To make the most of
+              React Native, it helps to understand React itself. This section
+              can get you started or can serve as a refresher course.
+            </p>
+            <p class="article__text">
+              We’re going to cover the core concepts behind React:
+            </p>
+            <p class="article__text">
+              <b>+ components.</b> The rest of this introduction to React uses
+              cats in its examples: friendly, approachable creatures that need
+              names and a cafe to work in.
+            </p>
+            <p class="article__text">
+              <b>+ JSX.</b> React and React Native use JSX, a syntax that lets
+              you write elements inside JavaScript like so:<br />
+              &lt;Text&gt;Hello, I am your cat!&lt;/Text&gt;.
+            </p>
+
+            <p class="article__text">
+              The React docs have a comprehensive guide to JSX you can refer to
+              learn even more. Because JSX is JavaScript, you can use variables
+              inside it. Here you are declaring a name for the cat, name, and
+              embedding it with curly braces inside&lt;/Text&gt;.
+            </p>
+            <p class="article__text">
+              <b>+ props.</b> Props is short for “properties”.
+            </p>
+            <p class="article__text text-bottom">
+              <b>+ state.</b> + state. While you can think of props as arguments
+              you use to configure how components render, state is like a
+              component’s personal data storage. State is useful for handling
+              data that changes over time or that comes from user interaction.
+              State gives your components memory!
             </p>
           </article>
           <article class="article">
+            <div class="article__line"></div>
             <h2 class="article__title">
-              Introduction
+              handling text input
 
-              <span class="article__chapter"> Chapter 1 </span>
+              <span class="article__chapter"> Chapter 4 </span>
             </h2>
             <p class="article__text">
-              Welcome to the very start of your React Native journey! If you're
-              looking for environment setup instructions, they've moved to their
-              own section. Continue reading for an introduction to the
-              documentation, Native Components, React, and more!
+              TextInput is a Core Component that allows the user to enter text.
+              It has an onChangeText prop that takes a function to be called
+              every time the text changed, and an onSubmitEditing prop that
+              takes a function to be called when the text is submitted.
             </p>
-          </article>
-          <article class="article">
-            <h2 class="article__title">
-              Introduction
-
-              <span class="article__chapter"> Chapter 1 </span>
-            </h2>
-            <p class="article__text">
-              Welcome to the very start of your React Native journey! If you're
-              looking for environment setup instructions, they've moved to their
-              own section. Continue reading for an introduction to the
-              documentation, Native Components, React, and more!
-            </p>
-          </article>
-          <article class="article">
-            <h2 class="article__title">
-              Introduction
-
-              <span class="article__chapter"> Chapter 1 </span>
-            </h2>
-            <p class="article__text">
-              Welcome to the very start of your React Native journey! If you're
-              looking for environment setup instructions, they've moved to their
-              own section. Continue reading for an introduction to the
-              documentation, Native Components, React, and more!
+            <p class="article__text text-bottom">
+              For example, let's say that as the user types, you're translating
+              their words into a different language. In this new language, every
+              single word is written the same way: 🍕. So the sentence "Hello
+              there Bob" would be translated as "🍕 🍕".
             </p>
           </article>
         </main>
+      </div>
+      <div class="container">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+          eligendi modi quasi magni veniam dignissimos, deserunt sit perferendis
+          fugiat. Harum quisquam ullam distinctio nisi quidem officia
+          dignissimos vitae explicabo placeat accusamus aspernatur amet
+          consectetur, excepturi aliquid magnam facilis, sapiente, dicta rerum
+          expedita sequi in repellendus quasi labore cupiditate. Eos quos
+          tenetur repellat ipsam molestiae facilis suscipit atque laborum,
+          officiis sit aut soluta totam accusantium neque doloribus tempora. Est
+          nobis, ipsa ab reprehenderit atque natus debitis modi, libero aperiam
+          adipisci sapiente totam quas, dicta quasi recusandae sint nisi numquam
+          reiciendis voluptatum hic? Minima sunt voluptate itaque quisquam
+          fugiat quibusdam dolore adipisci.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+          eligendi modi quasi magni veniam dignissimos, deserunt sit perferendis
+          fugiat. Harum quisquam ullam distinctio nisi quidem officia
+          dignissimos vitae explicabo placeat accusamus aspernatur amet
+          consectetur, excepturi aliquid magnam facilis, sapiente, dicta rerum
+          expedita sequi in repellendus quasi labore cupiditate. Eos quos
+          tenetur repellat ipsam molestiae facilis suscipit atque laborum,
+          officiis sit aut soluta totam accusantium neque doloribus tempora. Est
+          nobis, ipsa ab reprehenderit atque natus debitis modi, libero aperiam
+          adipisci sapiente totam quas, dicta quasi recusandae sint nisi numquam
+          reiciendis voluptatum hic? Minima sunt voluptate itaque quisquam
+          fugiat quibusdam dolore adipisci.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+          eligendi modi quasi magni veniam dignissimos, deserunt sit perferendis
+          fugiat. Harum quisquam ullam distinctio nisi quidem officia
+          dignissimos vitae explicabo placeat accusamus aspernatur amet
+          consectetur, excepturi aliquid magnam facilis, sapiente, dicta rerum
+          expedita sequi in repellendus quasi labore cupiditate. Eos quos
+          tenetur repellat ipsam molestiae facilis suscipit atque laborum,
+          officiis sit aut soluta totam accusantium neque doloribus tempora. Est
+          nobis, ipsa ab reprehenderit atque natus debitis modi, libero aperiam
+          adipisci sapiente totam quas, dicta quasi recusandae sint nisi numquam
+          reiciendis voluptatum hic? Minima sunt voluptate itaque quisquam
+          fugiat quibusdam dolore adipisci.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+          eligendi modi quasi magni veniam dignissimos, deserunt sit perferendis
+          fugiat. Harum quisquam ullam distinctio nisi quidem officia
+          dignissimos vitae explicabo placeat accusamus aspernatur amet
+          consectetur, excepturi aliquid magnam facilis, sapiente, dicta rerum
+          expedita sequi in repellendus quasi labore cupiditate. Eos quos
+          tenetur repellat ipsam molestiae facilis suscipit atque laborum,
+          officiis sit aut soluta totam accusantium neque doloribus tempora. Est
+          nobis, ipsa ab reprehenderit atque natus debitis modi, libero aperiam
+          adipisci sapiente totam quas, dicta quasi recusandae sint nisi numquam
+          reiciendis voluptatum hic? Minima sunt voluptate itaque quisquam
+          fugiat quibusdam dolore adipisci.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+          eligendi modi quasi magni veniam dignissimos, deserunt sit perferendis
+          fugiat. Harum quisquam ullam distinctio nisi quidem officia
+          dignissimos vitae explicabo placeat accusamus aspernatur amet
+          consectetur, excepturi aliquid magnam facilis, sapiente, dicta rerum
+          expedita sequi in repellendus quasi labore cupiditate. Eos quos
+          tenetur repellat ipsam molestiae facilis suscipit atque laborum,
+          officiis sit aut soluta totam accusantium neque doloribus tempora. Est
+          nobis, ipsa ab reprehenderit atque natus debitis modi, libero aperiam
+          adipisci sapiente totam quas, dicta quasi recusandae sint nisi numquam
+          reiciendis voluptatum hic? Minima sunt voluptate itaque quisquam
+          fugiat quibusdam dolore adipisci.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+          eligendi modi quasi magni veniam dignissimos, deserunt sit perferendis
+          fugiat. Harum quisquam ullam distinctio nisi quidem officia
+          dignissimos vitae explicabo placeat accusamus aspernatur amet
+          consectetur, excepturi aliquid magnam facilis, sapiente, dicta rerum
+          expedita sequi in repellendus quasi labore cupiditate. Eos quos
+          tenetur repellat ipsam molestiae facilis suscipit atque laborum,
+          officiis sit aut soluta totam accusantium neque doloribus tempora. Est
+          nobis, ipsa ab reprehenderit atque natus debitis modi, libero aperiam
+          adipisci sapiente totam quas, dicta quasi recusandae sint nisi numquam
+          reiciendis voluptatum hic? Minima sunt voluptate itaque quisquam
+          fugiat quibusdam dolore adipisci.
+        </p>
       </div>
     </div>
   </body>
