@@ -29,6 +29,9 @@
       color: var(--color-hover);
     }
   }
+  &__item--active {
+    text-decoration: underline;
+  }
   &__logo {
   }
 }
