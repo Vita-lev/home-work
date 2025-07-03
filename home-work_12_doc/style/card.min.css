@@ -1,1 +1,1 @@
-.card__container{padding-top:150px}.card__title{padding-bottom:40px}.card__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:30px;justify-content:center;align-items:center}
+.card__container{padding-top:150px}.card__title{padding-bottom:40px}.card__title ::before{content:"";display:block;width:100px;height:8px;background-color:var(--color-text);margin-bottom:20px}.card__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:30px;justify-content:center;align-items:center;padding-bottom:90px}
