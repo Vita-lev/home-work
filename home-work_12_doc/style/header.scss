@@ -1,5 +1,7 @@
 .header {
-  background-color: var(--color-white);
+  //filter: invert(1);
+  backdrop-filter: blur(10px);
+  //background-color: var(--color-white);
   position: fixed;
   top: 0;
   left: 0;
