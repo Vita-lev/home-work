@@ -28,11 +28,13 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1200px;
+  padding: 0 15px;
 }
 
-li,
-a {
+li {
   list-style: none;
+}
+a {
   text-decoration: none;
   color: var(--color-text);
 }
