@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home work 13</title>
+    <style>
+      @import "./font/fonts.css";
+      main {
+        padding-top: 121px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      ul,
+      li {
+        list-style: none;
+      }
+
+      body {
+        text-align: center;
+      }
+      .container {
+        min-width: 1170px;
+      }
+      img {
+        vertical-align: top;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      hgroup {
+        max-width: 450px;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        margin-bottom: 40px;
+        position: relative;
+        border-bottom: 1px solid rgb(118, 118, 24);
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 30px;
+          height: 20px;
+          background: #fff url("../home-work_13/image/bonfire-sharp\ 1.svg")
+            center center no-repeat;
+        }
+        p {
+          font-weight: 500;
+          text-transform: uppercase;
+          margin-bottom: 15px;
+          color: rgb(118, 118, 24);
+        }
+        h1 {
+          color: brown;
+          font-weight: 900;
+          text-transform: uppercase;
+        }
+      }
+
+      .team-member {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .img-col {
+          padding-left: 1px;
+          border-right: 1px solid rgb(118, 118, 24);
+          padding-right: 14.53%;
+          padding-left: 11.97%;
+          padding-top: 65px;
+
+          .img-wrap-1 {
+            position: relative;
+            max-width: 430px;
+            aspect-ratio: 1;
+
+            padding: 15px;
+            &::after {
+              @include corner("top", "left");
+            }
+            &::before {
+              @include corner("top", "right");
+            }
+          }
+          .img-wrap-2 {
+            padding: 15px;
+            &::after {
+              @include corner("bottom", "left");
+            }
+            &::before {
+              @include corner("bottom", "right");
+            }
+          }
+        }
+      }
+      @mixin corner($x-pos, $y-pos) {
+        content: "";
+        position: absolute;
+        #{$x-pos}: 0;
+        #{$y-pos}: 0;
+        width: 23.25%;
+        aspect-ratio: 1;
+        border-#{$x-pos}: 1px solid rgb(118, 118, 24);
+        border-#{$y-pos}: 1px solid rgb(118, 118, 24);
+      }
+
+      .content {
+        max-width: 430px;
+        padding-top: 70px;
+        padding-left: 50px;
+        padding-right: 50px;
+        h2 {
+          text-align: center;
+          font-weight: 900;
+          color: gray;
+          text-transform: capitalize;
+          margin-bottom: 60px;
+          position: relative;
+          &::after {
+            content: "";
+            bottom: -30px;
+            left: 50%;
+            transform: translatX(-50%);
+            width: 100px;
+            height: 1px;
+            background-color: rgb(118, 118, 24);
+            position: absolute;
+          }
+        }
+        .position {
+          font-weight: 400;
+          margin-bottom: 30px;
+        }
+      }
+
+      .social-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 49px;
+
+        .social-wrap {
+          display: flex;
+          gap: 5px;
+        }
+        a {
+          border: 2px solid #ccc;
+          border-radius: 50%;
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          .svg {
+            width: 100%;
+            height: 100%;
+            fill: #ccc;
+          }
+          &:hover svg {
+            fill: rgb(118, 118, 24);
+          }
+          &:hover {
+            border-color: rgb(118, 118, 24);
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <hgroup>
+          <p>The geniuses</p>
+          <h1>Our team</h1>
+        </hgroup>
+
+        <section class="team-member">
+          <div class="img-col">
+            <div class="img-wrap-1">
+              <div class="img-wrap-2">
+                <img src="./image/image.jpg" alt="karib foto" />
+              </div>
+            </div>
+          </div>
+
+          <div class="content">
+            <h2>Sahariar Kabir</h2>
+            <div class="position">Frontend Developer</div>
+            <div class="social-list">
+              <ul class="social-wrap">
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="facebook"
+                    rel="nofollow noreferrel"
+                  >
+                    <img
+                      class="svg"
+                      src="./image/facebook.svg"
+                      alt=""
+                      width="30"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="linkedin"
+                    rel="nofollow noreferrel"
+                  >
+                    <img
+                      class="svg"
+                      src="./image/linkedin.svg"
+                      alt="linkedin"
+                      width="30"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="linkedin"
+                    rel="nofollow noreferrel"
+                  >
+                    <img
+                      class="svg"
+                      src="./image/linkedin.svg"
+                      alt="linkedin"
+                      width="30"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    title="twittern"
+                    rel="nofollow noreferrel"
+                  >
+                    <img
+                      class="svg"
+                      src="./image/twitter.svg"
+                      alt="twitter"
+                      width="30"
+                    />
+                  </a>
+                </li>
+              </ul>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                cursus dui sit amet ligula efficitur, sit amet lacinia massa
+                dictum. Etiam accumsan felis a nunc facilisis, ut euismod lacus
+                placerat. Praesent rutrum eget massa a convallis. Nam vitae
+                augue malesuada, accumsan mauris ut, consectetur.
+              </p>
+              <a class="btn" href="#">view profile</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
