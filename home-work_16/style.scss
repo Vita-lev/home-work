@@ -1,0 +1,55 @@
+:root {
+  --color-white: #ffffff;
+  --color-violet-dark: #212353;
+  --color-gray-dark: #4b5d68;
+
+  --color-violet: #9c69e2;
+  --color-violet-middle: #8a40ee;
+  --color-pink: #f063b8;
+  --color-pink-middle: #eb4bab;
+  --color-green-light: #f0faf9;
+  --color-violet-light: #f6f0fd;
+  --color-pink-light: #fef0f8;
+  --color-blu-light: #eaf6fc;
+  --color-pink-medium: #fde8f5;
+  --color-blu-medium: #ccddff;
+  --color-blu-facebook: #3b5998;
+  --color-blu-twitter: #00acee;
+  --color-pink-instagram: #c13584;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  &__container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 45px 1fr 210px;
+    gap: 120px;
+  }
+  &__list {
+  }
+  &__items {
+    display: flex;
+
+    align-items: center;
+    gap: 40px;
+  }
+}

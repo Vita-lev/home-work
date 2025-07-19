@@ -100,8 +100,20 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+    &__wrap:nth-child(1) {
+      padding-bottom: 50px;
+      margin-bottom: 50px;
+    }
   }
-  &__img {
+  .blog__wrap:nth-child(1) {
+    padding-bottom: 50px;
+  }
+
+  .blog__wrap:nth-child(2) {
+    margin-bottom: 90px;
+  }
+
+  .blog__wrap:nth-child(1) .blog__wrap:nth-child(1) &__img {
   }
   &__content {
     width: 450px;
