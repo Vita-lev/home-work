@@ -170,12 +170,6 @@ body {
     max-width: 925px;
   }
   &__subtitle {
-    // font-family: var(--fonts-text);
-    // font-weight: 700;
-    // font-size: 36px;
-    // line-height: 38px;
-    // text-align: center;
-    // color: var(--color-white);
     margin-bottom: 27px;
   }
   &__subtext {
@@ -186,8 +180,6 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    // align-items: center;
-    // text-align: center;
     gap: 48px;
   }
 }
@@ -292,5 +284,38 @@ body {
   }
   &__button-secondary {
     max-width: 353px;
+  }
+}
+
+.crypto {
+  &__subtitle {
+    margin-bottom: 37px;
+  }
+  &__wrap-items {
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 288px;
+  }
+  &__number {
+    font-family: var(--fonts-text);
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: 1.35px;
+    vertical-align: middle;
+    color: var(--color-white);
+    margin-bottom: 23px;
+  }
+  &__circle {
+  }
+
+  &__icon {
+    margin-bottom: 79px;
+  }
+  &__text {
   }
 }
