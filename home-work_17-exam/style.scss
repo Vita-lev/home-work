@@ -91,10 +91,8 @@ body {
 }
 
 .hero {
-  //   background-image: url(./picture/img-hero.png);
   padding-top: 93px;
   padding-bottom: 120px;
-  //   padding-bottom: 120px;
   position: relative;
   &__bg {
     position: absolute;
@@ -263,6 +261,12 @@ body {
     top: 0px;
     left: 50px;
     z-index: 1;
+
+    @media (max-width: 991px) {
+      position: static;
+    }
+    @media (max-width: 767px) {
+    }
   }
   &__content {
     max-width: 760px;
