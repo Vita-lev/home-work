@@ -1,11 +1,14 @@
 :root {
+  --fonts-text: "Lato", sans-serif;
+
   --color-white: #ffffff;
   --color-middle-white: #f2f6fe;
   --color-middle-blue: #020046;
   --color-button: #47c08f;
   --color-blue: #000663;
-
-  --fonts-text: "Lato", sans-serif;
+  --color-footer: #f2f6fe;
+  --color-footer-text: #656565;
+  --color-footer-border: #d1d2dd;
 }
 
 * {
@@ -17,6 +20,7 @@
 .wrapper {
   overflow: hidden;
 }
+
 .container {
   margin: 0 auto;
   max-width: 1231px;
@@ -27,11 +31,20 @@ a {
   text-decoration: none;
 }
 
-li {
+ul {
   list-style: none;
 }
 
+.green {
+  color: var(--color-button);
+}
+
 body {
+  font-family: var(--fonts-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--color-white);
   background-color: var(--color-middle-blue);
 }
 
@@ -45,15 +58,17 @@ body {
 }
 
 .text {
-  font-family: var(--fonts-text);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  vertical-align: middle;
-  color: var(--color-white);
   @media (max-width: 991px) {
     text-align: center;
   }
+}
+
+.button-group {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  justify-content: center;
 }
 
 .button {
@@ -90,6 +105,7 @@ body {
   }
 }
 
+// SECTION HERO START
 .hero {
   padding-top: 93px;
   padding-bottom: 120px;
@@ -127,7 +143,6 @@ body {
     }
   }
   &__content {
-    // margin-bottom: 48px;
     margin-bottom: 180px;
     max-width: 639px;
   }
@@ -161,7 +176,6 @@ body {
     @media (max-width: 991px) {
       margin: 0 auto;
     }
-    // margin-bottom: 120px;
   }
 
   &__secondary-content {
@@ -175,15 +189,9 @@ body {
   &__subtext {
     margin-bottom: 20px;
   }
-
-  &__button-group {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    gap: 48px;
-  }
 }
-
+// SECTION HERO END
+// SECTION ABOUT START
 .about {
   background-color: var(--color-blue);
   padding-bottom: 80px;
@@ -204,7 +212,7 @@ body {
       grid-template-columns: repeat(1, 1fr);
     }
   }
-  &__grid-item {
+  &__item {
   }
   &__icon {
     margin-bottom: 29px;
@@ -222,25 +230,38 @@ body {
   }
   &__subtext {
   }
-  &__button-group {
-  }
   &__button {
   }
   &__button-secondary {
   }
 }
 
+// SECTION ABOUT END
+// SECTION BTC START
+
 .btc {
   position: relative;
-  // display: flex;
   padding-top: 121px;
   padding-bottom: 165px;
   &__container {
     display: grid;
     grid-template-columns: 1fr 760px;
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+    }
+    @media (max-width: 767px) {
+      position: static;
+      grid-template-columns: (1fr);
+    }
   }
   &__bg {
     z-index: -1;
+    @media (max-width: 991px) {
+    }
+    @media (max-width: 767px) {
+      position: static;
+      grid-template-columns: (1fr);
+    }
   }
   &__particles {
     position: absolute;
@@ -271,14 +292,6 @@ body {
     margin-bottom: 48px;
   }
 
-  &__button-group {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 38px;
-    justify-content: center;
-    margin-bottom: 160px;
-  }
   &__button {
     max-width: 353px;
   }
@@ -287,11 +300,21 @@ body {
   }
 }
 
+// SECTION BTC END
+// SECTION CRYPTO
+
 .crypto {
+  padding-bottom: 80px;
   &__subtitle {
     margin-bottom: 37px;
   }
   &__wrap-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 170px;
+    margin-bottom: 60px;
   }
   &__item {
     display: flex;
@@ -314,8 +337,55 @@ body {
   }
 
   &__icon {
-    margin-bottom: 79px;
+    margin-bottom: 44px;
+  }
+  &__item-title {
+    font-family: var(--fonts-text);
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 100%;
+    color: var(--color-white);
+    margin-bottom: 16px;
   }
   &__text {
+  }
+  &__button {
+    margin: 0 auto;
+  }
+}
+
+// SECTION CRYPTO END
+// SECTION FOOTER
+
+.footer {
+  background-color: var(--color-footer);
+  padding-top: 38px;
+  padding-bottom: 60px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-right: 1px solid var(--color-footer-border);
+    height: 40px;
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__text {
+    margin: 0 auto;
+    color: var(--color-footer-text);
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    max-width: 940px;
   }
 }
