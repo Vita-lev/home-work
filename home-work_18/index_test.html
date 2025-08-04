@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JS Work</h1>
+    <h4>Периметр Квадрата</h4>
+    <input class="inp1" type="text" placeholder="Вкажіть довжину" />
+    <button class="btn1">Result</button>
+    <p>Ваш периметр: <span class="out1">0</span> sm</p>
+    <hr />
+    <h4>Обмен валют</h4>
+    <input class="inp2" type="text" placeholder="Вкажіть довжину" />$
+    <button class="btn2">Result</button>
+    <p>Сумма: <span class="out2">0</span>гр</p>
+    <hr />
+    <script>
+      let inp1 = document.querySelector(".inp1");
+      let btn1 = document.querySelector(".btn1");
+      let out1 = document.querySelector(".out1");
+
+      btn1.onclick = () => {
+        // inp1.value ето то что пишут в инпут
+        // out1.innerHTML вставляет в HTML
+
+        console.log(inp1.value);
+        out1.innerHTML = inp1.value * 4;
+      };
+
+      let inp2 = document.querySelector(".inp2");
+      let btn2 = document.querySelector(".btn2");
+      let out2 = document.querySelector(".out2");
+
+      btn2.onclick = () => {
+        console.log(inp2.value);
+        out2.innerHTML = inp2.value * 41;
+      };
+    </script>
+  </body>
+</html>

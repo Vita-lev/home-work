@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Основи JavaScript</title>
+  </head>
+  <body>
+    <h1 class="title">Homework</h1>
+    <button onclick="alert('кнопка натиснута')">Натисни на мене</button>
+
+    <h2>Привітання</h2>
+    <button onclick="sayHello()">Запитати імя</button>
+
+    <h2>Периметр квадрата</h2>
+    <button onclick="calculetePerimeter()">Розрахувати периметр</button>
+
+    <!-- вбудований скрипт -->
+    <script>
+      alert("тицни ОК");
+      document.getElement;
+
+      //   правильні імена
+      let firstName; //імя
+      let lastName; //прізвище
+      let userFirstName; //імя користувача
+      let userLastName; //прізвище користувача
+
+      // неправильні імена
+      /* let 1name; // не можна починати з цифри
+      let first-name; // дефіс заборонено бо js сприйме як мінус
+      let var; // зарезервонване слово
+      let last name; // пробіли заборонені
+      let @surname; // не можна починати зі спецсимволу
+      */
+
+      // у js є два основні способи коментування коду
+
+      // 1.Це однорядковий коментар
+      let name = "Alex"; // це теж ком коментвар в кінці рядка
+
+      /* багаторядковий коментар */
+      let age = 25;
+
+      //Основні стилі
+
+      /*
+           1.PascalCase (UpperCamelCase)
+           UserName, MySuperClass
+           класи
+
+           2.snake_case
+           first_name, user_last_name
+           python
+
+           3.kebab-case
+           first-name, user-last-name
+           CSS, URL, файли
+
+           4.camelCase
+           firstName, userLastName, totalAmout
+           змінні, функції
+
+           5.UPPER_CASE_SNAKE (CONSTANT_CASE)
+           константи*/
+
+      //Запитуємо імя
+      let userName = prompt("Write your name");
+
+      //Виводими привітання
+      alert("Привіт, " + userName);
+
+      function sayHello() {
+        let userName = prompt("Write your name");
+        alert("Привіт, " + userName);
+      }
+
+      const year = 2025;
+      const userAge = prompt("Вкажіть ваш вік");
+      alert(year - userAge);
+
+      let perimeter = 200;
+
+      alert(perimeter * 4);
+    </script>
+
+    <!-- зовнішній скрипт -->
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
