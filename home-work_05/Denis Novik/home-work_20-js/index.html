@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Завдання з DOM</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background: #f5f5f5;
+      }
+      h2 {
+        margin-top: 40px;
+      }
+
+      /* --- 1. Редагування тексту --- */
+      #editorDiv,
+      #editorTextarea {
+        width: 400px;
+        min-height: 120px;
+        border: 2px solid #333;
+        border-radius: 8px;
+        padding: 10px;
+        background: #fff;
+      }
+      #editorTextarea {
+        resize: none;
+        font-family: inherit;
+        font-size: 14px;
+      }
+
+      /* --- 2. Таблиця --- */
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        background: #fff;
+      }
+      th,
+      td {
+        border: 1px solid #999;
+        padding: 6px 10px;
+        text-align: left;
+      }
+      th {
+        cursor: pointer;
+        background: #eee;
+      }
+      th:hover {
+        background: #ddd;
+      }
+
+      /* --- 3. Змінний блок --- */
+      .resizable {
+        position: relative;
+        width: 300px;
+        height: 150px;
+        border: 2px solid #333;
+        background: #fff;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-top: 20px;
+      }
+      .handle {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 16px;
+        height: 16px;
+        cursor: se-resize;
+        background: linear-gradient(135deg, transparent 50%, #999 50%) top left,
+          linear-gradient(135deg, transparent 50%, #999 50%) 4px 4px,
+          linear-gradient(135deg, transparent 50%, #999 50%) 8px 8px;
+        background-size: 8px 8px;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>1. Відображення/редагування тексту</h2>
+    <div id="editorDiv">Цей текст можна редагувати (Ctrl+E / Ctrl+S)</div>
+    <textarea id="editorTextarea" style="display: none"></textarea>
+
+    <h2>2. Таблиця з сортуванням</h2>
+    <table id="myTable">
+      <thead>
+        <tr>
+          <th>Ім'я</th>
+          <th>Вік</th>
+          <th>Місто</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Анна</td>
+          <td>22</td>
+          <td>Київ</td>
+        </tr>
+        <tr>
+          <td>Іван</td>
+          <td>35</td>
+          <td>Львів</td>
+        </tr>
+        <tr>
+          <td>Олег</td>
+          <td>18</td>
+          <td>Одеса</td>
+        </tr>
+        <tr>
+          <td>Марія</td>
+          <td>28</td>
+          <td>Харків</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>3. Змінний блок</h2>
+    <div class="resizable" id="box">
+      Блок тексту у рамці. Тягни за правий нижній кут.
+      <div class="handle" id="handle"></div>
+    </div>
+
+    <script>
+      // --- 1. Ctrl+E / Ctrl+S ---
+      const editorDiv = document.getElementById("editorDiv");
+      const editorTextarea = document.getElementById("editorTextarea");
+
+      document.addEventListener("keydown", function (e) {
+        if (e.ctrlKey && e.key.toLowerCase() === "e") {
+          e.preventDefault();
+          editorTextarea.value = editorDiv.textContent;
+          editorDiv.style.display = "none";
+          editorTextarea.style.display = "block";
+          editorTextarea.focus();
+        }
+        if (e.ctrlKey && e.key.toLowerCase() === "s") {
+          e.preventDefault();
+          editorDiv.textContent = editorTextarea.value;
+          editorTextarea.style.display = "none";
+          editorDiv.style.display = "block";
+        }
+      });
+
+      // --- 2. Сортування таблиці ---
+      const table = document.getElementById("myTable");
+      const headers = table.querySelectorAll("th");
+
+      headers.forEach((th, index) => {
+        th.addEventListener("click", () => {
+          const rows = Array.from(table.tBodies[0].rows);
+          const isNumeric = !isNaN(rows[0].cells[index].textContent.trim());
+
+          rows.sort((a, b) => {
+            let aText = a.cells[index].textContent.trim();
+            let bText = b.cells[index].textContent.trim();
+            return isNumeric ? aText - bText : aText.localeCompare(bText);
+          });
+
+          rows.forEach((row) => table.tBodies[0].appendChild(row));
+        });
+      });
+
+      // --- 3. Змінний блок ---
+      const box = document.getElementById("box");
+      const handle = document.getElementById("handle");
+      let startX,
+        startY,
+        startW,
+        startH,
+        dragging = false;
+
+      handle.addEventListener("mousedown", (e) => {
+        dragging = true;
+        startX = e.clientX;
+        startY = e.clientY;
+        const rect = box.getBoundingClientRect();
+        startW = rect.width;
+        startH = rect.height;
+        window.addEventListener("mousemove", onMouseMove);
+        window.addEventListener("mouseup", stopDrag);
+      });
+
+      function onMouseMove(e) {
+        if (!dragging) return;
+        const newW = startW + (e.clientX - startX);
+        const newH = startH + (e.clientY - startY);
+        box.style.width = Math.max(100, newW) + "px";
+        box.style.height = Math.max(80, newH) + "px";
+      }
+
+      function stopDrag() {
+        dragging = false;
+        window.removeEventListener("mousemove", onMouseMove);
+        window.removeEventListener("mouseup", stopDrag);
+      }
+    </script>
+  </body>
+</html>

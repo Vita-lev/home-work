@@ -36,14 +36,17 @@ var e4 = 3;
 var f4 = "Hello";
 document.querySelector(".out-7").textContent = e4 * f4; // Task 8.
 // По нажатию на кнопку .b-8 выполняется функция, которая выводит в div.out-8 то, что пользователь ввел в input.i-8.
+//function t8() {
+// value всегда получаем внутри функции
 
 function t8() {
-  // value всегда получаем внутри функции
-  var data = document.querySelector(".i-8").value;
-  var out = document.querySelector(".out-8");
-  out.textContent = data; // получили значение
-  // тут выводим
-}
+  var text = document.querySelector(".i-8").value;
+  document.querySelector(".out-8").innerHTML = text;
+  document.querySelector(".b-8").onclick = t8;
+} //let out = document.querySelector(".out-8");
+//out.textContent = text; // получили значение
+// тут выводим
+
 
 document.querySelector(".b-8").onclick = t8; // Task 9.
 // По нажатию на кнопку .b-9 выполняется функция t9,
@@ -60,7 +63,11 @@ function t9() {
 document.querySelector(".b-9").onclick = t9; // Task 10.
 // По нажатию на кнопку .b-10 выполняется функция t10, которая выводит в div.out-10 то, что пользователь ввел в input.i-10 умноженное на 20.
 
-function t10() {}
+function t10() {
+  var text = document.querySelector(".i-10") * 2;
+  var out = document.querySelector(".out-9");
+  out.textContent = text.value;
+}
 
 document.querySelector(".b-10").onclick = t10; // Task 11.
 // По нажатию на кнопку .b-11 выполняется функция t11, которая выводит на страницу в .out-11 число, которое ввел пользователь в i-11 и к нему добавленное число 55. В этой задаче мы не приводим к числу полученное из input.

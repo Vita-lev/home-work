@@ -43,13 +43,18 @@ document.querySelector(".out-7").textContent = e4 * f4;
 // Task 8.
 // По нажатию на кнопку .b-8 выполняется функция, которая выводит в div.out-8 то, что пользователь ввел в input.i-8.
 
+//function t8() {
+// value всегда получаем внутри функции
+
 function t8() {
-  // value всегда получаем внутри функции
-  let data = document.querySelector(".i-8").value;
-  let out = document.querySelector(".out-8");
-  out.textContent = data; // получили значение
-  // тут выводим
+  let text = document.querySelector(".i-8").value;
+  document.querySelector(".out-8").innerHTML = text;
+  document.querySelector(".b-8").onclick = t8;
 }
+
+//let out = document.querySelector(".out-8");
+//out.textContent = text; // получили значение
+// тут выводим
 
 document.querySelector(".b-8").onclick = t8;
 
@@ -70,7 +75,11 @@ document.querySelector(".b-9").onclick = t9;
 // Task 10.
 // По нажатию на кнопку .b-10 выполняется функция t10, которая выводит в div.out-10 то, что пользователь ввел в input.i-10 умноженное на 20.
 
-function t10() {}
+function t10() {
+  let text = document.querySelector(".i-10") * 2;
+  let out = document.querySelector(".out-9");
+  out.textContent = text.value;
+}
 
 document.querySelector(".b-10").onclick = t10;
 

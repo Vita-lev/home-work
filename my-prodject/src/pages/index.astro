@@ -1,0 +1,61 @@
+---
+// import { Image } from 'astro:assets';
+import '../style/main.scss';
+// import mainImg from '../image/img-01.jpg';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Gitar store</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="container header__container">
+					<a href="#"><img src="./img/logo.svg" alt="logo"></a>
+
+				 <nav class="header__nav">
+                 <ul class="header__menu">
+					<li class="header__item">Home</li>
+					<li class="header__item">Catalog</li>
+					<li class="header__item">News</li>
+					<li class="header__item">Contacts</li>
+				 </ul>
+				 </nav>
+
+				 <div class="header__button-group">
+					<button class="button--icon"><img src="/public/img/icon-search.svg" alt="search"></button>
+					<button class="button--icon"><img src="/public/img/icon-profile.svg" alt="profile"></button>
+				 </div>
+				</div>
+			</header>
+
+			<section class="hero">
+				<div class="container hero__container">
+					<h1 class="hero__title">Find your own style</h1>
+					<button class="button--primary">View more</button>
+				</div>
+			</section>
+
+			<section class="products">
+				<div class="container products__container">
+					<h2 class="products__title h2">new arrivals</h2>
+					<ul class="products__list">
+						<li class="products__item">
+							<span>in stock</span>
+							<img src="./img/foto-01.jpg" alt="gitar01">
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	
+		<!-- <img src="./img/logo.svg" alt=""> -->
+		<!-- <Image src={mainImg} alt="main image" /> -->
+		 
+	</body>
+</html>

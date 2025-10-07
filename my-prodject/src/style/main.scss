@@ -1,0 +1,66 @@
+:root {
+  --color-black: #000;
+  --color-brown-dark: #35312D;
+  --color-arrow-inactive: #202020;
+  --color-tomato: #C62100;
+  --color-tomato-light: #F16A50;
+  --color-brown-light: #F8F1EA;
+  --color-dot-inactive: rgba(248, 241, 234, 0.70);
+  --color-dark-dot-inactive: #CAC2BA;
+  --color-white: #FFFFFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__container {
+    
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  &__item {
+    display: flex;
+padding: 28px 15px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+cursor: pointer;
+   
+  }
+}
+
+.hero {
+  background-image: url('../image/img-01.jpg');
+}
